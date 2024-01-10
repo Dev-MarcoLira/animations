@@ -1,0 +1,99 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* root default font is set to 16px, but user can change it, so that we use REM that is relative to root's size! */
+
+body, html{
+    height: 100vh;
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    margin: 100px;
+
+}
+
+.sidebar{
+    width: 21.25rem;
+    padding: 2rem;
+    margin: 0 auto;
+
+    border-radius: 40px;
+    background-color: #232323;
+}
+
+.sidebar .logo{
+
+    width: 6.25rem;
+    margin: 0 auto 1rem;
+}
+
+.sidebar .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+}
+
+.sidebar nav{
+    margin-bottom: 1.5rem;
+}
+
+.sidebar nav .title{
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    color: #676767;
+    margin-bottom: 1rem;
+}
+
+.sidebar nav .item{
+    text-decoration: none;
+    color: #959595;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5rem 1rem;
+
+    transition: 0.4s;
+}
+
+.sidebar nav .item:hover{
+    color: #fff;
+}
+
+.sidebar nav .item .icon{
+    position: relative;
+}
+
+.sidebar nav .item .text {
+    margin-left: 0.5rem;
+}
+
+.sidebar nav .item .bullet{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    background-color: #b93030;
+    border-radius: 100%;
+}
+
+.sidebar nav .item .counter{
+    align-self: center;
+    margin-left: auto;
+}
